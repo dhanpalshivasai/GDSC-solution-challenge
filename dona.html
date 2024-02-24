@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Request</title>
+    <link rel="stylesheet" href="./dona.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Donation</h1>
+        <form id="fundForm" action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="problem">Problem:</label>
+            <select name="problem" id="problem">
+                <option value="1">African Poverty</option>
+                <option value="2">Food for Hungry</option>
+                <option value="3">Refugees of war</option> 
+                <option value="4">Education fund</option>
+                <option value="5">Others</option>
+              </select>
+
+            <label for="fundamount">Donation Amount:</label>
+            <input type="number" id="fundamount" name="fundamount" min="0" max="100" step="1" value="0" >
+ 
+
+            <label for="contactinfo">Contact Info:</label>
+            <textarea id="contactinfo" name="contactinfo" rows="4" required></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
